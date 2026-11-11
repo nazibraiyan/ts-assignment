@@ -9,7 +9,7 @@ TypeScript has two ways to define data structure. Types and Interface. They look
 A Type Alias lets us create a custom name for any type. It can represent objects, basic types, union types and tuples.
 
 **Example:**
-
+```typescript
 
 type Student = {
 
@@ -32,7 +32,7 @@ It specifies which properties an object should have and their types.
 
 **Example:**
 
-
+```typescript
 interface Student {
 
 name: string;

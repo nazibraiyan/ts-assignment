@@ -9,9 +9,9 @@ In Typescript, we often need to describe data that can have different shapes. So
 Let's imagine a scenario where we are developing an online payment system.
 Customers can pay using either a credit card or cash. Each payment method requires different types of informations.
 
-We can use a Union Type to represent these two payment options.
-Example:
+We can use a Union Type to represent these two payment options. Example:
 
+```typescript
 type CardPayment = {
   cardNumber: string;
 };
@@ -27,7 +27,7 @@ Here, `|` means that a payment can be either a card payment or a cash payment.
 
 Now, every payment should also contain some common informations, such as an ID and an amount. We can use an Intersection Type to combine these properties with our payment methods.
 
-```
+```typescript
 type Payment = PaymentMethod & {
   id: number;
   amount: number;
